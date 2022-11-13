@@ -1,0 +1,61 @@
+:root{
+    --clr-accent: hsl(25, 97%, 53%);
+    --clr-0: hsl(0, 0%, 100%);
+    --clr-200: hsl(217, 12%, 63%);
+    --clr-300: hsl(216, 12%, 54%);
+    --clr-800: hsl(213, 19%, 18%);
+    --clr-900: hsl(216, 12%, 8%);
+
+    --ff-neutral: 'Overpass', 'sans-serif';
+}
+
+*, *::before, *::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-size: 15px;
+    background-color: var(--clr-900);
+    font-family: var(--ff-neutral);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: var(--clr-0);
+}
+
+.row{
+    display: flex;
+}
+
+.card{
+    background:linear-gradient(hsl(213, 19%, 15%), hsl(213, 19%, 11%));
+    max-width: 375px;
+    border-radius: 15px;
+    padding: 2em;
+}
+
+.star-div{
+    background-color: var(--clr-800);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.description{
+    margin: 1.5em 0;
+}
+
+h1{
+    margin: 0 0 0.5em 0;
+}
+
+p{
+    color: var(--clr-200);
+    line-height: 1.5;
+}
