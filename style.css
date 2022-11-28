@@ -30,6 +30,10 @@ body{
     display: flex;
 }
 
+.not-visible{
+    display: none;
+}
+
 .card{
     background:linear-gradient(hsl(213, 19%, 15%), hsl(213, 19%, 11%));
     max-width: 375px;
@@ -41,7 +45,7 @@ body{
     background-color: var(--clr-800);
     width: 50px;
     height: 50px;
-    border-radius: 50%;
+    border-radius: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -58,4 +62,76 @@ h1{
 p{
     color: var(--clr-200);
     line-height: 1.5;
+}
+
+.rating{
+    justify-content: space-between;
+}
+
+.rating-numbers{
+    width: 50px;
+    background-color: var(--clr-800);
+    border-radius: 50%;
+    text-align: center;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rating-numbers:hover{
+    background-color: var(--clr-300);
+    color: var(--clr-0);
+    transition: 100ms;
+    cursor: pointer;
+}
+
+.selected-rating{
+    width: 50px;
+    border-radius: 50%;
+    text-align: center;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--clr-accent);
+    color: var(--clr-0);
+}
+
+.submit-button{
+    border-style: none;
+    font-family: var(--ff-neutral);
+    font-size: 1rem;
+    letter-spacing: 0.2ch;
+    color: var(--clr-0);
+    text-transform: uppercase;
+    background-color: var(--clr-accent);
+    border-radius: 50px;
+    width: 100%;
+    padding: 1em 0;
+    margin: 2em 0 0 0;
+}
+
+.submit-button:hover{
+    background-color: var(--clr-0);
+    color: var(--clr-accent);
+    transition: 100ms;
+    cursor: pointer;
+}
+
+/*after submit*/
+.card-submitted{
+    text-align: center;
+    padding: 3em 2em;
+}
+
+.submission-feedback{
+    font-size: 0.9rem;
+    color: var(--clr-accent);
+    font-weight: 100;
+    margin: 2em auto;
+    padding: 0.5em 1em;
+    background-color: var(--clr-800);
+    width: fit-content;
+    border-radius: 50px;
 }
